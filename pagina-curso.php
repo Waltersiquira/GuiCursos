@@ -17,7 +17,7 @@
             echo 'error';
         } else {
             while ($reg=$busca->fetch_object()){
-                echo "<img src='$reg->imagem'> <h3>$reg->nome</h3> <h4>R$$reg->preço</h4> carga: $reg->carga <br> total de aulas: $reg->totalaulas <hr> <p>$reg->descrição</p> <button style='background-color: blue;'><a href='comprar-curso.php?i2=$reg->id' style='color: white; text-decoration: none;'>Comprar</a></button>";
+                echo "<img src='$reg->imagem' width='500'> <h3>$reg->nome</h3> <h4>R$$reg->preço</h4> carga: $reg->carga <br> total de aulas: $reg->totalaulas <hr> <p>$reg->descrição</p> <button style='background-color: blue;'><a href='comprar-curso.php?i2=$reg->id' style='color: white; text-decoration: none;'>Comprar</a></button>";
             }
         }
     }
